@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+     non-joy       0.79      0.53      0.63      1717
+         joy       0.70      0.88      0.78      2104
+
+    accuracy                           0.72      3821
+   macro avg       0.74      0.71      0.71      3821
+weighted avg       0.74      0.72      0.71      3821

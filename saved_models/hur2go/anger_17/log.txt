@@ -1,0 +1,480 @@
+* loaded bert-base-uncased model and its tokenizer
+loading data from /projects/tir1/users/chanyoun/BLM-refactored/data/processed-emotions/
+Pre-training started
+Train[p]	 1-100   	SRC-CLS: 0.376
+	Valid	F1: 0.000	Acc: 94.030
+Train[p]	 1-200   	SRC-CLS: 0.300
+	Valid	F1: 19.355	Acc: 94.108
+saving trained models to saved_models/hur2go/anger_17/pretrained_19.35.pt
+
+Train[p]	 2-300   	SRC-CLS: 0.256
+	Valid	F1: 47.500	Acc: 93.401
+saving trained models to saved_models/hur2go/anger_17/pretrained_47.50.pt
+
+Train[p]	 2-400   	SRC-CLS: 0.229
+	Valid	F1: 49.351	Acc: 93.873
+saving trained models to saved_models/hur2go/anger_17/pretrained_49.35.pt
+
+Train[p]	 2-500   	SRC-CLS: 0.213
+	Valid	F1: 46.043	Acc: 94.108
+Train[p]	 3-600   	SRC-CLS: 0.198
+	Valid	F1: 47.436	Acc: 93.559
+Train[p]	 3-700   	SRC-CLS: 0.184
+	Valid	F1: 38.017	Acc: 94.108
+Train[p]	 3-800   	SRC-CLS: 0.174
+	Valid	F1: 47.953	Acc: 93.009
+Train[p]	 4-900   	SRC-CLS: 0.163
+	Valid	F1: 41.379	Acc: 93.323
+Train[p]	 4-1000  	SRC-CLS: 0.154
+	Valid	F1: 44.586	Acc: 93.166
+Train[p]	 4-1100  	SRC-CLS: 0.146
+	Valid	F1: 37.795	Acc: 93.794
+Train[p]	 5-1200  	SRC-CLS: 0.138
+	Valid	F1: 39.394	Acc: 93.716
+Train[p]	 5-1300  	SRC-CLS: 0.130
+	Valid	F1: 33.058	Acc: 93.637
+Train[p]	 6-1400  	SRC-CLS: 0.125
+	Valid	F1: 33.871	Acc: 93.559
+Train[p]	 6-1500  	SRC-CLS: 0.119
+	Valid	F1: 35.115	Acc: 93.323
+Train[p]	 6-1600  	SRC-CLS: 0.114
+	Valid	F1: 42.029	Acc: 93.716
+dev f1 decreased.
+Train[p]	 7-1700  	SRC-CLS: 0.109
+	Valid	F1: 42.857	Acc: 93.716
+dev f1 decreased.
+Train[p]	 7-1800  	SRC-CLS: 0.105
+	Valid	F1: 41.958	Acc: 93.480
+dev f1 decreased.
+Train[p]	 7-1900  	SRC-CLS: 0.101
+	Valid	F1: 41.727	Acc: 93.637
+dev f1 decreased.
+Train[p]	 8-2000  	SRC-CLS: 0.096
+	Valid	F1: 45.283	Acc: 93.166
+dev f1 decreased.
+Test	F1: 56.284	Acc: 93.585
+              precision    recall  f1-score   support
+
+   non-anger       0.96      0.97      0.97      2302
+       anger       0.59      0.54      0.56       192
+
+    accuracy                           0.94      2494
+   macro avg       0.78      0.75      0.76      2494
+weighted avg       0.93      0.94      0.93      2494
+
+Test	F1: 50.916	Acc: 79.665
+              precision    recall  f1-score   support
+
+   non-anger       0.89      0.85      0.87      3095
+       anger       0.47      0.56      0.51       726
+
+    accuracy                           0.80      3821
+   macro avg       0.68      0.70      0.69      3821
+weighted avg       0.81      0.80      0.80      3821
+
+Few shot training started
+Train[f]	 1-10    	SRC-CLS: 0.439
+	Valid	F1: 36.853	Acc: 84.090
+	Test	F1: 33.092	Acc: 83.067
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_36.85_33.09.pt
+
+Train[f]	 1-20    	SRC-CLS: 0.388
+	Valid	F1: 32.533	Acc: 83.881
+	Test	F1: 30.901	Acc: 83.146
+Train[f]	 1-30    	SRC-CLS: 0.378
+	Valid	F1: 29.157	Acc: 83.777
+	Test	F1: 26.018	Acc: 82.884
+Train[f]	 1-40    	SRC-CLS: 0.370
+	Valid	F1: 43.126	Acc: 85.003
+	Test	F1: 44.015	Acc: 84.821
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_43.13_44.02.pt
+
+Train[f]	 1-50    	SRC-CLS: 0.371
+	Valid	F1: 61.938	Acc: 84.324
+	Test	F1: 61.041	Acc: 83.931
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_61.94_61.04.pt
+
+Train[f]	 1-60    	SRC-CLS: 0.362
+	Valid	F1: 46.923	Acc: 85.603
+	Test	F1: 46.008	Acc: 85.135
+Train[f]	 1-70    	SRC-CLS: 0.355
+	Valid	F1: 59.631	Acc: 85.733
+	Test	F1: 58.448	Acc: 85.004
+Train[f]	 1-80    	SRC-CLS: 0.351
+	Valid	F1: 60.360	Acc: 86.228
+	Test	F1: 59.021	Acc: 85.318
+Train[f]	 1-90    	SRC-CLS: 0.347
+	Valid	F1: 62.024	Acc: 86.202
+	Test	F1: 60.585	Acc: 85.187
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_62.02_60.58.pt
+
+Train[f]	 1-100   	SRC-CLS: 0.343
+	Valid	F1: 61.161	Acc: 86.385
+	Test	F1: 60.276	Acc: 85.684
+Train[f]	 1-110   	SRC-CLS: 0.341
+	Valid	F1: 61.166	Acc: 86.620
+	Test	F1: 59.927	Acc: 85.684
+Train[f]	 1-120   	SRC-CLS: 0.337
+	Valid	F1: 59.537	Acc: 86.776
+	Test	F1: 57.829	Acc: 85.763
+Train[f]	 1-130   	SRC-CLS: 0.337
+	Valid	F1: 63.912	Acc: 86.333
+	Test	F1: 63.768	Acc: 85.606
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_63.91_63.77.pt
+
+Train[f]	 1-140   	SRC-CLS: 0.334
+	Valid	F1: 63.254	Acc: 87.454
+	Test	F1: 61.730	Acc: 86.339
+Train[f]	 1-150   	SRC-CLS: 0.331
+	Valid	F1: 63.670	Acc: 87.350
+	Test	F1: 62.918	Acc: 86.365
+Train[f]	 1-160   	SRC-CLS: 0.329
+	Valid	F1: 64.993	Acc: 87.272
+	Test	F1: 64.208	Acc: 86.286
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_64.99_64.21.pt
+
+Train[f]	 1-170   	SRC-CLS: 0.327
+	Valid	F1: 63.348	Acc: 87.324
+	Test	F1: 64.075	Acc: 86.941
+Train[f]	 1-180   	SRC-CLS: 0.324
+	Valid	F1: 60.820	Acc: 87.533
+	Test	F1: 59.524	Acc: 86.653
+Train[f]	 1-190   	SRC-CLS: 0.324
+	Valid	F1: 66.757	Acc: 87.220
+	Test	F1: 65.831	Acc: 86.443
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_66.76_65.83.pt
+
+Train[f]	 1-200   	SRC-CLS: 0.321
+	Valid	F1: 61.538	Acc: 87.611
+	Test	F1: 61.228	Acc: 86.941
+Train[f]	 1-210   	SRC-CLS: 0.318
+	Valid	F1: 65.106	Acc: 87.950
+	Test	F1: 63.436	Acc: 86.967
+Train[f]	 1-220   	SRC-CLS: 0.317
+	Valid	F1: 67.393	Acc: 86.724
+	Test	F1: 65.596	Acc: 85.423
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_67.39_65.60.pt
+
+Train[f]	 1-230   	SRC-CLS: 0.314
+	Valid	F1: 62.677	Acc: 87.637
+	Test	F1: 62.143	Acc: 87.150
+Train[f]	 1-240   	SRC-CLS: 0.312
+	Valid	F1: 66.667	Acc: 87.272
+	Test	F1: 65.306	Acc: 86.208
+Train[f]	 1-250   	SRC-CLS: 0.312
+	Valid	F1: 66.476	Acc: 87.793
+	Test	F1: 65.840	Acc: 87.019
+Train[f]	 1-260   	SRC-CLS: 0.312
+	Valid	F1: 65.588	Acc: 87.793
+	Test	F1: 65.490	Acc: 87.202
+Train[f]	 1-270   	SRC-CLS: 0.312
+	Valid	F1: 67.283	Acc: 88.002
+	Test	F1: 66.484	Acc: 87.202
+Train[f]	 1-280   	SRC-CLS: 0.312
+	Valid	F1: 66.075	Acc: 88.028
+	Test	F1: 65.759	Acc: 87.490
+Train[f]	 1-290   	SRC-CLS: 0.311
+	Valid	F1: 66.019	Acc: 88.132
+	Test	F1: 66.235	Acc: 87.726
+Train[f]	 1-300   	SRC-CLS: 0.311
+	Valid	F1: 65.804	Acc: 88.289
+	Test	F1: 65.545	Acc: 87.673
+Train[f]	 1-310   	SRC-CLS: 0.309
+	Valid	F1: 62.713	Acc: 88.028
+	Test	F1: 60.794	Acc: 87.071
+Train[f]	 1-320   	SRC-CLS: 0.307
+	Valid	F1: 65.435	Acc: 88.289
+	Test	F1: 64.531	Acc: 87.543
+Train[f]	 1-330   	SRC-CLS: 0.307
+	Valid	F1: 68.922	Acc: 87.298
+	Test	F1: 67.073	Acc: 85.868
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_68.92_67.07.pt
+
+Train[f]	 1-340   	SRC-CLS: 0.306
+	Valid	F1: 61.794	Acc: 88.002
+	Test	F1: 59.265	Acc: 86.941
+Train[f]	 1-350   	SRC-CLS: 0.305
+	Valid	F1: 66.514	Acc: 88.550
+	Test	F1: 64.889	Acc: 87.595
+Train[f]	 1-360   	SRC-CLS: 0.303
+	Valid	F1: 67.593	Acc: 88.445
+	Test	F1: 66.994	Acc: 87.700
+Train[f]	 1-370   	SRC-CLS: 0.302
+	Valid	F1: 69.129	Acc: 87.793
+	Test	F1: 68.561	Acc: 86.967
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_69.13_68.56.pt
+
+Train[f]	 1-380   	SRC-CLS: 0.302
+	Valid	F1: 66.147	Acc: 88.680
+	Test	F1: 64.706	Acc: 87.752
+Train[f]	 1-390   	SRC-CLS: 0.301
+	Valid	F1: 65.623	Acc: 88.550
+	Test	F1: 63.768	Acc: 87.569
+Train[f]	 1-400   	SRC-CLS: 0.300
+	Valid	F1: 62.375	Acc: 88.263
+	Test	F1: 59.704	Acc: 87.176
+Train[f]	 1-410   	SRC-CLS: 0.300
+	Valid	F1: 67.452	Acc: 88.472
+	Test	F1: 67.470	Acc: 87.987
+Train[f]	 1-420   	SRC-CLS: 0.300
+	Valid	F1: 67.562	Acc: 88.654
+	Test	F1: 67.287	Acc: 88.040
+Train[f]	 1-430   	SRC-CLS: 0.300
+	Valid	F1: 68.293	Acc: 88.811
+	Test	F1: 67.660	Acc: 88.066
+Train[f]	 1-440   	SRC-CLS: 0.299
+	Valid	F1: 63.936	Acc: 88.289
+	Test	F1: 63.305	Acc: 87.621
+Train[f]	 1-450   	SRC-CLS: 0.299
+	Valid	F1: 67.854	Acc: 88.706
+	Test	F1: 66.715	Acc: 87.883
+Train[f]	 1-460   	SRC-CLS: 0.299
+	Valid	F1: 65.245	Acc: 88.524
+	Test	F1: 64.692	Acc: 87.830
+Train[f]	 1-470   	SRC-CLS: 0.298
+	Valid	F1: 68.528	Acc: 88.237
+	Test	F1: 68.629	Acc: 87.726
+Train[f]	 2-480   	SRC-CLS: 0.297
+	Valid	F1: 62.729	Acc: 88.315
+	Test	F1: 62.208	Acc: 87.726
+Train[f]	 2-490   	SRC-CLS: 0.297
+	Valid	F1: 70.883	Acc: 87.872
+	Test	F1: 68.190	Acc: 86.155
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_70.88_68.19.pt
+
+Train[f]	 2-500   	SRC-CLS: 0.296
+	Valid	F1: 67.383	Acc: 88.915
+	Test	F1: 67.306	Acc: 88.406
+Train[f]	 2-510   	SRC-CLS: 0.295
+	Valid	F1: 68.732	Acc: 88.680
+	Test	F1: 68.646	Acc: 88.118
+Train[f]	 2-520   	SRC-CLS: 0.293
+	Valid	F1: 68.848	Acc: 88.576
+	Test	F1: 68.544	Acc: 88.014
+Train[f]	 2-530   	SRC-CLS: 0.292
+	Valid	F1: 68.138	Acc: 88.706
+	Test	F1: 67.801	Acc: 88.118
+dev f1 decreased.
+Train[f]	 2-540   	SRC-CLS: 0.290
+	Valid	F1: 68.646	Acc: 88.706
+	Test	F1: 68.802	Acc: 88.275
+Train[f]	 2-550   	SRC-CLS: 0.289
+	Valid	F1: 69.993	Acc: 88.237
+	Test	F1: 69.393	Acc: 87.464
+Train[f]	 2-560   	SRC-CLS: 0.288
+	Valid	F1: 66.977	Acc: 88.889
+	Test	F1: 64.376	Acc: 87.516
+dev f1 decreased.
+Train[f]	 2-570   	SRC-CLS: 0.288
+	Valid	F1: 69.695	Acc: 88.341
+	Test	F1: 68.560	Acc: 87.255
+Train[f]	 2-580   	SRC-CLS: 0.287
+	Valid	F1: 65.431	Acc: 88.811
+	Test	F1: 62.745	Acc: 87.569
+dev f1 decreased.
+Train[f]	 2-590   	SRC-CLS: 0.285
+	Valid	F1: 66.615	Acc: 88.837
+	Test	F1: 65.208	Acc: 87.935
+Train[f]	 2-600   	SRC-CLS: 0.284
+	Valid	F1: 69.164	Acc: 88.837
+	Test	F1: 68.923	Acc: 88.223
+Train[f]	 2-610   	SRC-CLS: 0.283
+	Valid	F1: 70.281	Acc: 88.706
+	Test	F1: 69.307	Acc: 87.830
+Train[f]	 2-620   	SRC-CLS: 0.282
+	Valid	F1: 69.367	Acc: 89.150
+	Test	F1: 67.461	Acc: 87.857
+dev f1 decreased.
+Train[f]	 2-630   	SRC-CLS: 0.281
+	Valid	F1: 69.554	Acc: 88.080
+	Test	F1: 69.051	Acc: 87.543
+Train[f]	 2-640   	SRC-CLS: 0.280
+	Valid	F1: 65.645	Acc: 88.889
+	Test	F1: 64.203	Acc: 87.830
+dev f1 decreased.
+Train[f]	 2-650   	SRC-CLS: 0.279
+	Valid	F1: 69.870	Acc: 88.550
+	Test	F1: 69.216	Acc: 87.778
+Train[f]	 2-660   	SRC-CLS: 0.279
+	Valid	F1: 63.543	Acc: 88.837
+	Test	F1: 61.564	Acc: 87.647
+dev f1 decreased.
+Train[f]	 2-670   	SRC-CLS: 0.278
+	Valid	F1: 70.296	Acc: 88.758
+	Test	F1: 68.598	Acc: 87.516
+Train[f]	 2-680   	SRC-CLS: 0.278
+	Valid	F1: 65.888	Acc: 88.576
+	Test	F1: 65.465	Acc: 87.961
+dev f1 decreased.
+Train[f]	 2-690   	SRC-CLS: 0.277
+	Valid	F1: 68.892	Acc: 88.576
+	Test	F1: 68.309	Acc: 87.883
+Train[f]	 2-700   	SRC-CLS: 0.276
+	Valid	F1: 69.006	Acc: 88.941
+	Test	F1: 67.880	Acc: 87.987
+Train[f]	 2-710   	SRC-CLS: 0.276
+	Valid	F1: 69.639	Acc: 88.811
+	Test	F1: 68.750	Acc: 87.961
+Train[f]	 2-720   	SRC-CLS: 0.275
+	Valid	F1: 69.314	Acc: 88.915
+	Test	F1: 69.601	Acc: 88.432
+dev f1 decreased.
+Train[f]	 2-730   	SRC-CLS: 0.275
+	Valid	F1: 65.375	Acc: 88.811
+	Test	F1: 64.151	Acc: 88.066
+dev f1 decreased.
+Train[f]	 2-740   	SRC-CLS: 0.274
+	Valid	F1: 67.766	Acc: 88.785
+	Test	F1: 68.772	Acc: 88.616
+Train[f]	 2-750   	SRC-CLS: 0.273
+	Valid	F1: 69.483	Acc: 89.071
+	Test	F1: 68.671	Acc: 88.275
+Train[f]	 2-760   	SRC-CLS: 0.273
+	Valid	F1: 68.848	Acc: 89.071
+	Test	F1: 67.758	Acc: 88.144
+dev f1 decreased.
+Train[f]	 2-770   	SRC-CLS: 0.272
+	Valid	F1: 67.444	Acc: 89.071
+	Test	F1: 66.071	Acc: 88.066
+dev f1 decreased.
+Train[f]	 2-780   	SRC-CLS: 0.272
+	Valid	F1: 70.122	Acc: 89.176
+	Test	F1: 68.591	Acc: 88.040
+Train[f]	 2-790   	SRC-CLS: 0.271
+	Valid	F1: 70.109	Acc: 89.280
+	Test	F1: 68.239	Acc: 88.014
+dev f1 decreased.
+Train[f]	 2-800   	SRC-CLS: 0.270
+	Valid	F1: 70.822	Acc: 88.524
+	Test	F1: 69.860	Acc: 87.647
+Train[f]	 2-810   	SRC-CLS: 0.270
+	Valid	F1: 66.404	Acc: 88.863
+	Test	F1: 66.417	Acc: 88.275
+dev f1 decreased.
+Train[f]	 2-820   	SRC-CLS: 0.270
+	Valid	F1: 69.331	Acc: 88.993
+	Test	F1: 68.846	Acc: 88.275
+Train[f]	 2-830   	SRC-CLS: 0.270
+	Valid	F1: 65.239	Acc: 88.993
+	Test	F1: 63.007	Acc: 87.830
+dev f1 decreased.
+Train[f]	 2-840   	SRC-CLS: 0.270
+	Valid	F1: 66.185	Acc: 89.019
+	Test	F1: 64.402	Acc: 87.935
+Train[f]	 2-850   	SRC-CLS: 0.269
+	Valid	F1: 67.930	Acc: 88.967
+	Test	F1: 67.107	Acc: 88.275
+Train[f]	 2-860   	SRC-CLS: 0.268
+	Valid	F1: 68.713	Acc: 89.098
+	Test	F1: 68.448	Acc: 88.563
+Train[f]	 2-870   	SRC-CLS: 0.268
+	Valid	F1: 69.123	Acc: 89.071
+	Test	F1: 69.209	Acc: 88.589
+Train[f]	 2-880   	SRC-CLS: 0.267
+	Valid	F1: 67.445	Acc: 89.098
+	Test	F1: 66.966	Acc: 88.459
+dev f1 decreased.
+Train[f]	 2-890   	SRC-CLS: 0.266
+	Valid	F1: 70.588	Acc: 89.176
+	Test	F1: 69.748	Acc: 88.354
+Train[f]	 2-900   	SRC-CLS: 0.266
+	Valid	F1: 67.553	Acc: 89.176
+	Test	F1: 66.866	Acc: 88.406
+dev f1 decreased.
+Train[f]	 2-910   	SRC-CLS: 0.266
+	Valid	F1: 69.738	Acc: 88.863
+	Test	F1: 68.606	Acc: 87.857
+Train[f]	 2-920   	SRC-CLS: 0.266
+	Valid	F1: 67.534	Acc: 88.941
+	Test	F1: 67.591	Acc: 88.380
+dev f1 decreased.
+Train[f]	 2-930   	SRC-CLS: 0.265
+	Valid	F1: 66.030	Acc: 88.863
+	Test	F1: 65.393	Acc: 88.144
+dev f1 decreased.
+Train[f]	 2-940   	SRC-CLS: 0.265
+	Valid	F1: 70.289	Acc: 88.732
+	Test	F1: 69.715	Acc: 88.040
+Train[f]	 2-950   	SRC-CLS: 0.265
+	Valid	F1: 69.361	Acc: 89.124
+	Test	F1: 69.693	Acc: 88.642
+dev f1 decreased.
+Train[f]	 3-960   	SRC-CLS: 0.264
+	Valid	F1: 68.908	Acc: 89.384
+	Test	F1: 68.142	Acc: 88.694
+dev f1 decreased.
+Train[f]	 3-970   	SRC-CLS: 0.264
+	Valid	F1: 69.912	Acc: 89.358
+	Test	F1: 69.019	Acc: 88.511
+Train[f]	 3-980   	SRC-CLS: 0.263
+	Valid	F1: 69.839	Acc: 89.254
+	Test	F1: 69.019	Acc: 88.511
+dev f1 decreased.
+Train[f]	 3-990   	SRC-CLS: 0.262
+	Valid	F1: 69.622	Acc: 89.098
+	Test	F1: 69.172	Acc: 88.406
+dev f1 decreased.
+Train[f]	 3-1000  	SRC-CLS: 0.261
+	Valid	F1: 70.942	Acc: 88.419
+	Test	F1: 70.222	Acc: 87.726
+saving trained models to saved_models/hur2go/anger_17/fewshot_1e-05_70.94_70.22.pt
+
+Train[f]	 3-1010  	SRC-CLS: 0.260
+	Valid	F1: 68.368	Acc: 89.332
+	Test	F1: 67.812	Acc: 88.720
+dev f1 decreased.
+Train[f]	 3-1020  	SRC-CLS: 0.260
+	Valid	F1: 69.565	Acc: 88.498
+	Test	F1: 69.478	Acc: 88.066
+Train[f]	 3-1030  	SRC-CLS: 0.259
+	Valid	F1: 69.652	Acc: 88.863
+	Test	F1: 69.220	Acc: 88.223
+Train[f]	 3-1040  	SRC-CLS: 0.258
+	Valid	F1: 68.144	Acc: 89.124
+	Test	F1: 65.723	Acc: 87.961
+dev f1 decreased.
+Train[f]	 3-1050  	SRC-CLS: 0.257
+	Valid	F1: 69.056	Acc: 88.289
+	Test	F1: 68.495	Acc: 87.673
+Train[f]	 3-1060  	SRC-CLS: 0.256
+	Valid	F1: 69.144	Acc: 87.872
+	Test	F1: 69.147	Acc: 87.412
+Train[f]	 3-1070  	SRC-CLS: 0.256
+	Valid	F1: 65.313	Acc: 88.863
+	Test	F1: 63.341	Acc: 87.883
+dev f1 decreased.
+Train[f]	 3-1080  	SRC-CLS: 0.255
+	Valid	F1: 69.009	Acc: 88.498
+	Test	F1: 68.389	Acc: 87.830
+Train[f]	 3-1090  	SRC-CLS: 0.255
+	Valid	F1: 68.070	Acc: 88.524
+	Test	F1: 67.958	Acc: 87.883
+dev f1 decreased.
+Train[f]	 3-1100  	SRC-CLS: 0.254
+	Valid	F1: 67.955	Acc: 88.758
+	Test	F1: 67.374	Acc: 87.935
+dev f1 decreased.
+Train[f]	 3-1110  	SRC-CLS: 0.253
+	Valid	F1: 67.582	Acc: 88.915
+	Test	F1: 66.569	Acc: 88.066
+dev f1 decreased.
+Test	F1: 45.312	Acc: 91.580
+              precision    recall  f1-score   support
+
+   non-anger       0.95      0.95      0.95      2302
+       anger       0.45      0.45      0.45       192
+
+    accuracy                           0.92      2494
+   macro avg       0.70      0.70      0.70      2494
+weighted avg       0.92      0.92      0.92      2494
+
+Test	F1: 70.222	Acc: 87.726
+              precision    recall  f1-score   support
+
+   non-anger       0.94      0.90      0.92      3095
+       anger       0.65      0.76      0.70       726
+
+    accuracy                           0.88      3821
+   macro avg       0.80      0.83      0.81      3821
+weighted avg       0.89      0.88      0.88      3821
+

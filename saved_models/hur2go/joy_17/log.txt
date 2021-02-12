@@ -1,0 +1,416 @@
+* loaded bert-base-uncased model and its tokenizer
+loading data from /projects/tir1/users/chanyoun/BLM-refactored/data/processed-emotions/
+Pre-training started
+Train[p]	 1-100   	SRC-CLS: 0.601
+	Valid	F1: 83.638	Acc: 71.877
+saving trained models to saved_models/hur2go/joy_17/pretrained_83.64.pt
+
+Train[p]	 1-200   	SRC-CLS: 0.564
+	Valid	F1: 82.504	Acc: 75.412
+Train[p]	 2-300   	SRC-CLS: 0.536
+	Valid	F1: 84.484	Acc: 76.512
+saving trained models to saved_models/hur2go/joy_17/pretrained_84.48.pt
+
+Train[p]	 2-400   	SRC-CLS: 0.515
+	Valid	F1: 83.829	Acc: 76.512
+Train[p]	 2-500   	SRC-CLS: 0.498
+	Valid	F1: 85.322	Acc: 78.162
+saving trained models to saved_models/hur2go/joy_17/pretrained_85.32.pt
+
+Train[p]	 3-600   	SRC-CLS: 0.486
+	Valid	F1: 84.733	Acc: 77.298
+Train[p]	 3-700   	SRC-CLS: 0.467
+	Valid	F1: 83.998	Acc: 76.984
+Train[p]	 3-800   	SRC-CLS: 0.454
+	Valid	F1: 85.700	Acc: 78.083
+saving trained models to saved_models/hur2go/joy_17/pretrained_85.70.pt
+
+Train[p]	 4-900   	SRC-CLS: 0.439
+	Valid	F1: 82.575	Acc: 75.334
+Train[p]	 4-1000  	SRC-CLS: 0.422
+	Valid	F1: 84.877	Acc: 77.298
+Train[p]	 4-1100  	SRC-CLS: 0.411
+	Valid	F1: 85.946	Acc: 78.240
+saving trained models to saved_models/hur2go/joy_17/pretrained_85.95.pt
+
+Train[p]	 5-1200  	SRC-CLS: 0.394
+	Valid	F1: 84.041	Acc: 76.669
+Train[p]	 5-1300  	SRC-CLS: 0.380
+	Valid	F1: 84.368	Acc: 77.062
+Train[p]	 6-1400  	SRC-CLS: 0.368
+	Valid	F1: 83.926	Acc: 76.198
+Train[p]	 6-1500  	SRC-CLS: 0.354
+	Valid	F1: 83.234	Acc: 75.727
+Train[p]	 6-1600  	SRC-CLS: 0.343
+	Valid	F1: 83.745	Acc: 75.727
+dev f1 decreased.
+Train[p]	 7-1700  	SRC-CLS: 0.332
+	Valid	F1: 84.266	Acc: 76.591
+dev f1 decreased.
+Train[p]	 7-1800  	SRC-CLS: 0.321
+	Valid	F1: 81.436	Acc: 73.998
+dev f1 decreased.
+Train[p]	 7-1900  	SRC-CLS: 0.311
+	Valid	F1: 84.255	Acc: 76.748
+dev f1 decreased.
+Train[p]	 8-2000  	SRC-CLS: 0.301
+	Valid	F1: 82.155	Acc: 75.020
+dev f1 decreased.
+Test	F1: 83.404	Acc: 74.980
+              precision    recall  f1-score   support
+
+     non-joy       0.63      0.40      0.49       746
+         joy       0.78      0.90      0.83      1748
+
+    accuracy                           0.75      2494
+   macro avg       0.70      0.65      0.66      2494
+weighted avg       0.73      0.75      0.73      2494
+
+Test	F1: 77.948	Acc: 72.442
+              precision    recall  f1-score   support
+
+     non-joy       0.79      0.53      0.63      1717
+         joy       0.70      0.88      0.78      2104
+
+    accuracy                           0.72      3821
+   macro avg       0.74      0.71      0.71      3821
+weighted avg       0.74      0.72      0.71      3821
+
+Few shot training started
+Train[f]	 1-10    	SRC-CLS: 0.558
+	Valid	F1: 76.291	Acc: 75.326
+	Test	F1: 77.075	Acc: 76.943
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_76.29_77.08.pt
+
+Train[f]	 1-20    	SRC-CLS: 0.531
+	Valid	F1: 83.298	Acc: 79.291
+	Test	F1: 82.361	Acc: 78.880
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_83.30_82.36.pt
+
+Train[f]	 1-30    	SRC-CLS: 0.511
+	Valid	F1: 83.127	Acc: 81.142
+	Test	F1: 82.948	Acc: 81.654
+Train[f]	 1-40    	SRC-CLS: 0.491
+	Valid	F1: 85.148	Acc: 82.994
+	Test	F1: 84.268	Acc: 82.675
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_85.15_84.27.pt
+
+Train[f]	 1-50    	SRC-CLS: 0.472
+	Valid	F1: 84.502	Acc: 82.942
+	Test	F1: 84.132	Acc: 83.198
+Train[f]	 1-60    	SRC-CLS: 0.460
+	Valid	F1: 86.820	Acc: 84.898
+	Test	F1: 86.024	Acc: 84.481
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_86.82_86.02.pt
+
+Train[f]	 1-70    	SRC-CLS: 0.447
+	Valid	F1: 86.653	Acc: 85.055
+	Test	F1: 86.316	Acc: 85.213
+Train[f]	 1-80    	SRC-CLS: 0.439
+	Valid	F1: 86.417	Acc: 85.029
+	Test	F1: 86.450	Acc: 85.684
+Train[f]	 1-90    	SRC-CLS: 0.427
+	Valid	F1: 88.033	Acc: 86.307
+	Test	F1: 87.894	Acc: 86.627
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_88.03_87.89.pt
+
+Train[f]	 1-100   	SRC-CLS: 0.420
+	Valid	F1: 87.160	Acc: 85.707
+	Test	F1: 87.613	Acc: 86.731
+Train[f]	 1-110   	SRC-CLS: 0.412
+	Valid	F1: 88.221	Acc: 86.515
+	Test	F1: 88.368	Acc: 87.150
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_88.22_88.37.pt
+
+Train[f]	 1-120   	SRC-CLS: 0.405
+	Valid	F1: 88.372	Acc: 86.698
+	Test	F1: 88.604	Acc: 87.438
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_88.37_88.60.pt
+
+Train[f]	 1-130   	SRC-CLS: 0.401
+	Valid	F1: 88.612	Acc: 86.907
+	Test	F1: 88.452	Acc: 87.228
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_88.61_88.45.pt
+
+Train[f]	 1-140   	SRC-CLS: 0.396
+	Valid	F1: 88.213	Acc: 86.750
+	Test	F1: 88.449	Acc: 87.490
+Train[f]	 1-150   	SRC-CLS: 0.392
+	Valid	F1: 88.319	Acc: 86.802
+	Test	F1: 88.713	Acc: 87.700
+Train[f]	 1-160   	SRC-CLS: 0.388
+	Valid	F1: 88.720	Acc: 87.220
+	Test	F1: 89.134	Acc: 88.118
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_88.72_89.13.pt
+
+Train[f]	 1-170   	SRC-CLS: 0.384
+	Valid	F1: 89.037	Acc: 87.533
+	Test	F1: 89.545	Acc: 88.511
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_89.04_89.55.pt
+
+Train[f]	 1-180   	SRC-CLS: 0.380
+	Valid	F1: 89.590	Acc: 87.611
+	Test	F1: 89.076	Acc: 87.464
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_89.59_89.08.pt
+
+Train[f]	 1-190   	SRC-CLS: 0.378
+	Valid	F1: 89.307	Acc: 87.846
+	Test	F1: 89.752	Acc: 88.746
+Train[f]	 1-200   	SRC-CLS: 0.374
+	Valid	F1: 89.612	Acc: 88.002
+	Test	F1: 89.856	Acc: 88.720
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_89.61_89.86.pt
+
+Train[f]	 1-210   	SRC-CLS: 0.370
+	Valid	F1: 89.319	Acc: 87.767
+	Test	F1: 89.889	Acc: 88.825
+Train[f]	 1-220   	SRC-CLS: 0.368
+	Valid	F1: 88.432	Acc: 87.220
+	Test	F1: 89.377	Acc: 88.616
+Train[f]	 1-230   	SRC-CLS: 0.366
+	Valid	F1: 89.815	Acc: 88.080
+	Test	F1: 89.644	Acc: 88.354
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_89.82_89.64.pt
+
+Train[f]	 1-240   	SRC-CLS: 0.364
+	Valid	F1: 89.575	Acc: 88.028
+	Test	F1: 89.889	Acc: 88.825
+Train[f]	 1-250   	SRC-CLS: 0.361
+	Valid	F1: 89.447	Acc: 87.846
+	Test	F1: 89.759	Acc: 88.642
+Train[f]	 1-260   	SRC-CLS: 0.360
+	Valid	F1: 89.629	Acc: 88.054
+	Test	F1: 89.852	Acc: 88.720
+Train[f]	 1-270   	SRC-CLS: 0.358
+	Valid	F1: 90.029	Acc: 88.237
+	Test	F1: 89.555	Acc: 88.144
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.03_89.55.pt
+
+Train[f]	 1-280   	SRC-CLS: 0.356
+	Valid	F1: 88.509	Acc: 87.376
+	Test	F1: 89.279	Acc: 88.642
+Train[f]	 1-290   	SRC-CLS: 0.355
+	Valid	F1: 90.438	Acc: 89.124
+	Test	F1: 90.205	Acc: 89.270
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.44_90.21.pt
+
+Train[f]	 1-300   	SRC-CLS: 0.355
+	Valid	F1: 90.232	Acc: 88.445
+	Test	F1: 89.644	Acc: 88.197
+Train[f]	 1-310   	SRC-CLS: 0.354
+	Valid	F1: 89.991	Acc: 88.680
+	Test	F1: 90.127	Acc: 89.244
+Train[f]	 1-320   	SRC-CLS: 0.354
+	Valid	F1: 89.812	Acc: 88.419
+	Test	F1: 90.330	Acc: 89.348
+Train[f]	 1-330   	SRC-CLS: 0.353
+	Valid	F1: 90.418	Acc: 88.628
+	Test	F1: 89.966	Acc: 88.563
+Train[f]	 1-340   	SRC-CLS: 0.352
+	Valid	F1: 89.629	Acc: 88.393
+	Test	F1: 89.981	Acc: 89.165
+Train[f]	 1-350   	SRC-CLS: 0.350
+	Valid	F1: 90.507	Acc: 88.915
+	Test	F1: 90.460	Acc: 89.296
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.51_90.46.pt
+
+Train[f]	 1-360   	SRC-CLS: 0.348
+	Valid	F1: 90.221	Acc: 88.680
+	Test	F1: 90.547	Acc: 89.453
+Train[f]	 1-370   	SRC-CLS: 0.346
+	Valid	F1: 89.631	Acc: 88.341
+	Test	F1: 90.231	Acc: 89.375
+Train[f]	 1-380   	SRC-CLS: 0.345
+	Valid	F1: 90.403	Acc: 88.941
+	Test	F1: 90.450	Acc: 89.401
+Train[f]	 1-390   	SRC-CLS: 0.345
+	Valid	F1: 90.222	Acc: 88.732
+	Test	F1: 90.575	Acc: 89.532
+Train[f]	 1-400   	SRC-CLS: 0.344
+	Valid	F1: 90.425	Acc: 88.654
+	Test	F1: 90.009	Acc: 88.589
+Train[f]	 1-410   	SRC-CLS: 0.343
+	Valid	F1: 90.191	Acc: 88.602
+	Test	F1: 90.743	Acc: 89.662
+Train[f]	 1-420   	SRC-CLS: 0.343
+	Valid	F1: 90.494	Acc: 88.915
+	Test	F1: 90.570	Acc: 89.427
+Train[f]	 1-430   	SRC-CLS: 0.342
+	Valid	F1: 90.528	Acc: 88.915
+	Test	F1: 90.584	Acc: 89.401
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.53_90.58.pt
+
+Train[f]	 1-440   	SRC-CLS: 0.341
+	Valid	F1: 90.461	Acc: 88.993
+	Test	F1: 90.621	Acc: 89.610
+Train[f]	 1-450   	SRC-CLS: 0.339
+	Valid	F1: 90.562	Acc: 88.915
+	Test	F1: 90.660	Acc: 89.453
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.56_90.66.pt
+
+Train[f]	 1-460   	SRC-CLS: 0.337
+	Valid	F1: 90.301	Acc: 88.889
+	Test	F1: 90.879	Acc: 89.924
+Train[f]	 1-470   	SRC-CLS: 0.337
+	Valid	F1: 90.439	Acc: 89.098
+	Test	F1: 90.840	Acc: 89.924
+Train[f]	 2-480   	SRC-CLS: 0.336
+	Valid	F1: 90.520	Acc: 88.915
+	Test	F1: 90.735	Acc: 89.610
+Train[f]	 2-490   	SRC-CLS: 0.334
+	Valid	F1: 89.552	Acc: 88.393
+	Test	F1: 90.231	Acc: 89.505
+Train[f]	 2-500   	SRC-CLS: 0.332
+	Valid	F1: 90.336	Acc: 88.811
+	Test	F1: 90.764	Acc: 89.689
+Train[f]	 2-510   	SRC-CLS: 0.331
+	Valid	F1: 90.354	Acc: 88.785
+	Test	F1: 90.735	Acc: 89.636
+Train[f]	 2-520   	SRC-CLS: 0.329
+	Valid	F1: 89.586	Acc: 88.315
+	Test	F1: 90.563	Acc: 89.741
+dev f1 decreased.
+Train[f]	 2-530   	SRC-CLS: 0.327
+	Valid	F1: 90.317	Acc: 88.524
+	Test	F1: 90.297	Acc: 88.982
+Train[f]	 2-540   	SRC-CLS: 0.327
+	Valid	F1: 89.988	Acc: 88.654
+	Test	F1: 90.497	Acc: 89.584
+dev f1 decreased.
+Train[f]	 2-550   	SRC-CLS: 0.325
+	Valid	F1: 90.619	Acc: 89.124
+	Test	F1: 90.610	Acc: 89.532
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.62_90.61.pt
+
+Train[f]	 2-560   	SRC-CLS: 0.324
+	Valid	F1: 90.779	Acc: 89.228
+	Test	F1: 90.786	Acc: 89.662
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.78_90.79.pt
+
+Train[f]	 2-570   	SRC-CLS: 0.323
+	Valid	F1: 90.387	Acc: 88.993
+	Test	F1: 90.857	Acc: 89.950
+dev f1 decreased.
+Train[f]	 2-580   	SRC-CLS: 0.321
+	Valid	F1: 90.721	Acc: 88.993
+	Test	F1: 90.471	Acc: 89.139
+Train[f]	 2-590   	SRC-CLS: 0.321
+	Valid	F1: 90.667	Acc: 89.202
+	Test	F1: 90.956	Acc: 89.924
+dev f1 decreased.
+Train[f]	 2-600   	SRC-CLS: 0.319
+	Valid	F1: 90.482	Acc: 89.019
+	Test	F1: 90.742	Acc: 89.715
+dev f1 decreased.
+Train[f]	 2-610   	SRC-CLS: 0.318
+	Valid	F1: 90.658	Acc: 89.228
+	Test	F1: 90.721	Acc: 89.689
+Train[f]	 2-620   	SRC-CLS: 0.317
+	Valid	F1: 90.836	Acc: 89.358
+	Test	F1: 90.845	Acc: 89.767
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.84_90.85.pt
+
+Train[f]	 2-630   	SRC-CLS: 0.316
+	Valid	F1: 90.389	Acc: 88.967
+	Test	F1: 90.686	Acc: 89.662
+dev f1 decreased.
+Train[f]	 2-640   	SRC-CLS: 0.315
+	Valid	F1: 90.426	Acc: 88.993
+	Test	F1: 90.566	Acc: 89.532
+Train[f]	 2-650   	SRC-CLS: 0.314
+	Valid	F1: 90.970	Acc: 89.384
+	Test	F1: 90.808	Acc: 89.610
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.97_90.81.pt
+
+Train[f]	 2-660   	SRC-CLS: 0.313
+	Valid	F1: 90.700	Acc: 89.228
+	Test	F1: 90.704	Acc: 89.636
+dev f1 decreased.
+Train[f]	 2-670   	SRC-CLS: 0.312
+	Valid	F1: 90.787	Acc: 89.254
+	Test	F1: 90.782	Acc: 89.662
+Train[f]	 2-680   	SRC-CLS: 0.311
+	Valid	F1: 90.018	Acc: 88.732
+	Test	F1: 90.590	Acc: 89.741
+dev f1 decreased.
+Train[f]	 2-690   	SRC-CLS: 0.309
+	Valid	F1: 90.742	Acc: 89.228
+	Test	F1: 90.679	Acc: 89.584
+Train[f]	 2-700   	SRC-CLS: 0.308
+	Valid	F1: 90.653	Acc: 89.098
+	Test	F1: 90.667	Acc: 89.558
+dev f1 decreased.
+Train[f]	 2-710   	SRC-CLS: 0.307
+	Valid	F1: 90.362	Acc: 88.967
+	Test	F1: 90.576	Acc: 89.636
+dev f1 decreased.
+Train[f]	 2-720   	SRC-CLS: 0.306
+	Valid	F1: 90.753	Acc: 89.306
+	Test	F1: 90.930	Acc: 89.898
+Train[f]	 2-730   	SRC-CLS: 0.306
+	Valid	F1: 90.722	Acc: 89.202
+	Test	F1: 90.760	Acc: 89.662
+dev f1 decreased.
+Train[f]	 2-740   	SRC-CLS: 0.305
+	Valid	F1: 90.675	Acc: 89.254
+	Test	F1: 90.591	Acc: 89.584
+dev f1 decreased.
+Train[f]	 2-750   	SRC-CLS: 0.304
+	Valid	F1: 90.755	Acc: 89.202
+	Test	F1: 90.676	Acc: 89.532
+Train[f]	 2-760   	SRC-CLS: 0.304
+	Valid	F1: 90.806	Acc: 89.411
+	Test	F1: 90.832	Acc: 89.819
+Train[f]	 2-770   	SRC-CLS: 0.303
+	Valid	F1: 90.989	Acc: 89.306
+	Test	F1: 90.512	Acc: 89.191
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_90.99_90.51.pt
+
+Train[f]	 2-780   	SRC-CLS: 0.302
+	Valid	F1: 90.574	Acc: 89.202
+	Test	F1: 90.659	Acc: 89.689
+dev f1 decreased.
+Train[f]	 2-790   	SRC-CLS: 0.302
+	Valid	F1: 90.905	Acc: 89.150
+	Test	F1: 90.389	Acc: 89.008
+Train[f]	 2-800   	SRC-CLS: 0.301
+	Valid	F1: 90.624	Acc: 89.254
+	Test	F1: 90.599	Acc: 89.610
+dev f1 decreased.
+Train[f]	 2-810   	SRC-CLS: 0.300
+	Valid	F1: 91.131	Acc: 89.593
+	Test	F1: 90.467	Acc: 89.217
+saving trained models to saved_models/hur2go/joy_17/fewshot_1e-05_91.13_90.47.pt
+
+Train[f]	 2-820   	SRC-CLS: 0.300
+	Valid	F1: 91.068	Acc: 89.619
+	Test	F1: 90.564	Acc: 89.453
+dev f1 decreased.
+Train[f]	 2-830   	SRC-CLS: 0.299
+	Valid	F1: 90.889	Acc: 89.437
+	Test	F1: 90.585	Acc: 89.505
+dev f1 decreased.
+Train[f]	 2-840   	SRC-CLS: 0.298
+	Valid	F1: 90.881	Acc: 89.228
+	Test	F1: 90.424	Acc: 89.113
+dev f1 decreased.
+Test	F1: 78.922	Acc: 71.451
+              precision    recall  f1-score   support
+
+     non-joy       0.52      0.60      0.56       746
+         joy       0.82      0.76      0.79      1748
+
+    accuracy                           0.71      2494
+   macro avg       0.67      0.68      0.67      2494
+weighted avg       0.73      0.71      0.72      2494
+
+Test	F1: 90.467	Acc: 89.217
+              precision    recall  f1-score   support
+
+     non-joy       0.91      0.85      0.88      1717
+         joy       0.88      0.93      0.90      2104
+
+    accuracy                           0.89      3821
+   macro avg       0.89      0.89      0.89      3821
+weighted avg       0.89      0.89      0.89      3821
+

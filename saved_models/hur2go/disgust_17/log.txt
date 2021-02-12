@@ -1,0 +1,307 @@
+* loaded bert-base-uncased model and its tokenizer
+loading data from /projects/tir1/users/chanyoun/BLM-refactored/data/processed-emotions/
+Pre-training started
+Train[p]	 1-100   	SRC-CLS: 0.373
+	Valid	F1: 0.000	Acc: 94.030
+Train[p]	 1-200   	SRC-CLS: 0.283
+	Valid	F1: 39.024	Acc: 94.108
+saving trained models to saved_models/hur2go/disgust_17/pretrained_39.02.pt
+
+Train[p]	 2-300   	SRC-CLS: 0.238
+	Valid	F1: 29.126	Acc: 94.266
+Train[p]	 2-400   	SRC-CLS: 0.212
+	Valid	F1: 49.655	Acc: 94.266
+saving trained models to saved_models/hur2go/disgust_17/pretrained_49.66.pt
+
+Train[p]	 2-500   	SRC-CLS: 0.195
+	Valid	F1: 47.143	Acc: 94.187
+Train[p]	 3-600   	SRC-CLS: 0.179
+	Valid	F1: 51.163	Acc: 93.401
+saving trained models to saved_models/hur2go/disgust_17/pretrained_51.16.pt
+
+Train[p]	 3-700   	SRC-CLS: 0.164
+	Valid	F1: 52.229	Acc: 94.108
+saving trained models to saved_models/hur2go/disgust_17/pretrained_52.23.pt
+
+Train[p]	 3-800   	SRC-CLS: 0.154
+	Valid	F1: 36.207	Acc: 94.187
+Train[p]	 4-900   	SRC-CLS: 0.143
+	Valid	F1: 43.284	Acc: 94.030
+Train[p]	 4-1000  	SRC-CLS: 0.134
+	Valid	F1: 41.221	Acc: 93.951
+Train[p]	 4-1100  	SRC-CLS: 0.126
+	Valid	F1: 32.759	Acc: 93.873
+Train[p]	 5-1200  	SRC-CLS: 0.118
+	Valid	F1: 42.963	Acc: 93.951
+Train[p]	 5-1300  	SRC-CLS: 0.112
+	Valid	F1: 48.366	Acc: 93.794
+Train[p]	 6-1400  	SRC-CLS: 0.106
+	Valid	F1: 40.559	Acc: 93.323
+Train[p]	 6-1500  	SRC-CLS: 0.100
+	Valid	F1: 38.168	Acc: 93.637
+Train[p]	 6-1600  	SRC-CLS: 0.096
+	Valid	F1: 37.705	Acc: 94.030
+dev f1 decreased.
+Train[p]	 7-1700  	SRC-CLS: 0.092
+	Valid	F1: 35.484	Acc: 93.716
+dev f1 decreased.
+Train[p]	 7-1800  	SRC-CLS: 0.089
+	Valid	F1: 52.459	Acc: 93.166
+saving trained models to saved_models/hur2go/disgust_17/pretrained_52.46.pt
+
+Train[p]	 7-1900  	SRC-CLS: 0.085
+	Valid	F1: 47.436	Acc: 93.559
+dev f1 decreased.
+Train[p]	 8-2000  	SRC-CLS: 0.082
+	Valid	F1: 33.043	Acc: 93.951
+dev f1 decreased.
+Train[p]	 8-2100  	SRC-CLS: 0.079
+	Valid	F1: 39.062	Acc: 93.873
+dev f1 decreased.
+Train[p]	 8-2200  	SRC-CLS: 0.076
+	Valid	F1: 36.207	Acc: 94.187
+dev f1 decreased.
+Train[p]	 9-2300  	SRC-CLS: 0.074
+	Valid	F1: 44.286	Acc: 93.873
+dev f1 decreased.
+Test	F1: 53.753	Acc: 92.342
+              precision    recall  f1-score   support
+
+ non-disgust       0.97      0.95      0.96      2318
+     disgust       0.47      0.63      0.54       176
+
+    accuracy                           0.92      2494
+   macro avg       0.72      0.79      0.75      2494
+weighted avg       0.94      0.92      0.93      2494
+
+Test	F1: 11.646	Acc: 72.599
+              precision    recall  f1-score   support
+
+ non-disgust       0.98      0.73      0.84      3698
+     disgust       0.06      0.56      0.12       123
+
+    accuracy                           0.73      3821
+   macro avg       0.52      0.65      0.48      3821
+weighted avg       0.95      0.73      0.81      3821
+
+Few shot training started
+Train[f]	 1-10    	SRC-CLS: 0.286
+	Valid	F1: 0.000	Acc: 97.470
+	Test	F1: 1.613	Acc: 96.807
+Train[f]	 1-20    	SRC-CLS: 0.215
+	Valid	F1: 0.000	Acc: 97.470
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-30    	SRC-CLS: 0.182
+	Valid	F1: 0.000	Acc: 97.470
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-40    	SRC-CLS: 0.166
+	Valid	F1: 0.000	Acc: 97.470
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-50    	SRC-CLS: 0.155
+	Valid	F1: 0.000	Acc: 97.470
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-60    	SRC-CLS: 0.149
+	Valid	F1: 0.000	Acc: 97.470
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-70    	SRC-CLS: 0.144
+	Valid	F1: 0.000	Acc: 97.470
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-80    	SRC-CLS: 0.144
+	Valid	F1: 0.000	Acc: 97.444
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-90    	SRC-CLS: 0.137
+	Valid	F1: 0.000	Acc: 97.444
+	Test	F1: 0.000	Acc: 96.781
+Train[f]	 1-100   	SRC-CLS: 0.136
+	Valid	F1: 2.020	Acc: 97.470
+	Test	F1: 3.200	Acc: 96.833
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_2.02_3.20.pt
+
+Train[f]	 1-110   	SRC-CLS: 0.136
+	Valid	F1: 4.000	Acc: 97.496
+	Test	F1: 6.202	Acc: 96.833
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_4.00_6.20.pt
+
+Train[f]	 1-120   	SRC-CLS: 0.132
+	Valid	F1: 2.041	Acc: 97.496
+	Test	F1: 1.613	Acc: 96.807
+Train[f]	 1-130   	SRC-CLS: 0.131
+	Valid	F1: 4.040	Acc: 97.522
+	Test	F1: 4.762	Acc: 96.859
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_4.04_4.76.pt
+
+Train[f]	 1-140   	SRC-CLS: 0.129
+	Valid	F1: 4.040	Acc: 97.522
+	Test	F1: 6.299	Acc: 96.886
+Train[f]	 1-150   	SRC-CLS: 0.124
+	Valid	F1: 7.921	Acc: 97.574
+	Test	F1: 9.302	Acc: 96.938
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_7.92_9.30.pt
+
+Train[f]	 1-160   	SRC-CLS: 0.122
+	Valid	F1: 16.667	Acc: 97.653
+	Test	F1: 17.647	Acc: 97.069
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_16.67_17.65.pt
+
+Train[f]	 1-170   	SRC-CLS: 0.119
+	Valid	F1: 35.200	Acc: 97.887
+	Test	F1: 29.139	Acc: 97.200
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_35.20_29.14.pt
+
+Train[f]	 1-180   	SRC-CLS: 0.117
+	Valid	F1: 20.000	Acc: 97.705
+	Test	F1: 24.113	Acc: 97.200
+Train[f]	 1-190   	SRC-CLS: 0.114
+	Valid	F1: 9.709	Acc: 97.574
+	Test	F1: 15.038	Acc: 97.043
+Train[f]	 1-200   	SRC-CLS: 0.113
+	Valid	F1: 33.333	Acc: 97.913
+	Test	F1: 30.667	Acc: 97.278
+Train[f]	 1-210   	SRC-CLS: 0.111
+	Valid	F1: 42.236	Acc: 97.574
+	Test	F1: 38.251	Acc: 97.043
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_42.24_38.25.pt
+
+Train[f]	 1-220   	SRC-CLS: 0.110
+	Valid	F1: 38.235	Acc: 97.809
+	Test	F1: 33.962	Acc: 97.252
+Train[f]	 1-230   	SRC-CLS: 0.108
+	Valid	F1: 36.364	Acc: 97.992
+	Test	F1: 30.872	Acc: 97.304
+Train[f]	 1-240   	SRC-CLS: 0.106
+	Valid	F1: 38.849	Acc: 97.783
+	Test	F1: 36.364	Acc: 97.252
+Train[f]	 1-250   	SRC-CLS: 0.103
+	Valid	F1: 39.735	Acc: 97.626
+	Test	F1: 37.647	Acc: 97.226
+Train[f]	 1-260   	SRC-CLS: 0.102
+	Valid	F1: 41.975	Acc: 97.548
+	Test	F1: 42.222	Acc: 97.278
+Train[f]	 1-270   	SRC-CLS: 0.101
+	Valid	F1: 43.820	Acc: 97.392
+	Test	F1: 46.154	Acc: 97.252
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_43.82_46.15.pt
+
+Train[f]	 1-280   	SRC-CLS: 0.100
+	Valid	F1: 44.565	Acc: 97.340
+	Test	F1: 50.000	Acc: 97.278
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_44.57_50.00.pt
+
+Train[f]	 1-290   	SRC-CLS: 0.099
+	Valid	F1: 43.787	Acc: 97.522
+	Test	F1: 46.392	Acc: 97.278
+Train[f]	 1-300   	SRC-CLS: 0.098
+	Valid	F1: 41.892	Acc: 97.757
+	Test	F1: 44.571	Acc: 97.461
+Train[f]	 1-310   	SRC-CLS: 0.098
+	Valid	F1: 39.706	Acc: 97.861
+	Test	F1: 40.000	Acc: 97.488
+Train[f]	 1-320   	SRC-CLS: 0.098
+	Valid	F1: 33.058	Acc: 97.887
+	Test	F1: 34.211	Acc: 97.383
+Train[f]	 1-330   	SRC-CLS: 0.097
+	Valid	F1: 37.594	Acc: 97.835
+	Test	F1: 37.179	Acc: 97.435
+Train[f]	 1-340   	SRC-CLS: 0.097
+	Valid	F1: 45.033	Acc: 97.835
+	Test	F1: 47.727	Acc: 97.592
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_45.03_47.73.pt
+
+Train[f]	 1-350   	SRC-CLS: 0.097
+	Valid	F1: 46.784	Acc: 97.626
+	Test	F1: 50.256	Acc: 97.461
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_46.78_50.26.pt
+
+Train[f]	 1-360   	SRC-CLS: 0.095
+	Valid	F1: 34.375	Acc: 97.809
+	Test	F1: 40.252	Acc: 97.514
+Train[f]	 1-370   	SRC-CLS: 0.095
+	Valid	F1: 42.667	Acc: 97.757
+	Test	F1: 48.276	Acc: 97.645
+Train[f]	 1-380   	SRC-CLS: 0.095
+	Valid	F1: 47.273	Acc: 97.731
+	Test	F1: 51.613	Acc: 97.645
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_47.27_51.61.pt
+
+Train[f]	 1-390   	SRC-CLS: 0.094
+	Valid	F1: 40.000	Acc: 97.809
+	Test	F1: 43.902	Acc: 97.592
+Train[f]	 1-400   	SRC-CLS: 0.094
+	Valid	F1: 47.561	Acc: 97.757
+	Test	F1: 50.811	Acc: 97.618
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_47.56_50.81.pt
+
+Train[f]	 1-410   	SRC-CLS: 0.093
+	Valid	F1: 34.375	Acc: 97.809
+	Test	F1: 37.419	Acc: 97.461
+Train[f]	 1-420   	SRC-CLS: 0.092
+	Valid	F1: 34.375	Acc: 97.809
+	Test	F1: 37.419	Acc: 97.461
+Train[f]	 1-430   	SRC-CLS: 0.092
+	Valid	F1: 42.857	Acc: 97.705
+	Test	F1: 48.588	Acc: 97.618
+Train[f]	 1-440   	SRC-CLS: 0.091
+	Valid	F1: 43.750	Acc: 97.653
+	Test	F1: 47.312	Acc: 97.435
+Train[f]	 1-450   	SRC-CLS: 0.090
+	Valid	F1: 41.096	Acc: 97.757
+	Test	F1: 47.059	Acc: 97.645
+Train[f]	 1-460   	SRC-CLS: 0.090
+	Valid	F1: 46.914	Acc: 97.757
+	Test	F1: 51.337	Acc: 97.618
+Train[f]	 1-470   	SRC-CLS: 0.090
+	Valid	F1: 38.849	Acc: 97.783
+	Test	F1: 43.902	Acc: 97.592
+Train[f]	 2-480   	SRC-CLS: 0.090
+	Valid	F1: 35.484	Acc: 97.913
+	Test	F1: 36.601	Acc: 97.461
+Train[f]	 2-490   	SRC-CLS: 0.089
+	Valid	F1: 36.508	Acc: 97.913
+	Test	F1: 38.462	Acc: 97.488
+Train[f]	 2-500   	SRC-CLS: 0.088
+	Valid	F1: 44.304	Acc: 97.705
+	Test	F1: 51.366	Acc: 97.671
+Train[f]	 2-510   	SRC-CLS: 0.087
+	Valid	F1: 45.283	Acc: 97.731
+	Test	F1: 51.648	Acc: 97.697
+Train[f]	 2-520   	SRC-CLS: 0.086
+	Valid	F1: 44.872	Acc: 97.757
+	Test	F1: 53.476	Acc: 97.723
+dev f1 decreased.
+Train[f]	 2-530   	SRC-CLS: 0.086
+	Valid	F1: 50.794	Acc: 97.574
+	Test	F1: 54.808	Acc: 97.540
+saving trained models to saved_models/hur2go/disgust_17/fewshot_1e-05_50.79_54.81.pt
+
+Train[f]	 2-540   	SRC-CLS: 0.085
+	Valid	F1: 49.746	Acc: 97.418
+	Test	F1: 53.704	Acc: 97.383
+dev f1 decreased.
+Train[f]	 2-550   	SRC-CLS: 0.085
+	Valid	F1: 47.788	Acc: 96.922
+	Test	F1: 57.692	Acc: 97.121
+dev f1 decreased.
+Train[f]	 2-560   	SRC-CLS: 0.084
+	Valid	F1: 45.783	Acc: 97.653
+	Test	F1: 52.850	Acc: 97.618
+dev f1 decreased.
+Test	F1: 2.162	Acc: 92.743
+              precision    recall  f1-score   support
+
+ non-disgust       0.93      1.00      0.96      2318
+     disgust       0.22      0.01      0.02       176
+
+    accuracy                           0.93      2494
+   macro avg       0.58      0.50      0.49      2494
+weighted avg       0.88      0.93      0.90      2494
+
+Test	F1: 54.808	Acc: 97.540
+              precision    recall  f1-score   support
+
+ non-disgust       0.98      0.99      0.99      3698
+     disgust       0.67      0.46      0.55       123
+
+    accuracy                           0.98      3821
+   macro avg       0.83      0.73      0.77      3821
+weighted avg       0.97      0.98      0.97      3821
+

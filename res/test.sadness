@@ -1,0 +1,10 @@
+text	gold	model_pred	pred_prob
+i hate this	neutral	neutral	0.88,0.2
+i love this	neutral	neutral	0.96,0.08
+this is very joy ##ful	neutral	neutral	0.96,0.09
+i ' m super mad about this situ ##tai ##on	neutral	neutral	0.78,0.3
+honestly , this is disgusting	neutral	neutral	0.92,0.15
+don ' t you dare talk to me again	neutral	neutral	0.89,0.19
+i was terrified by the overall procedure	neutral	neutral	0.86,0.21
+my sincere condo ##lence ##s to you and your family	neutral	sadness	0.34,0.71
+wow this is unexpected	neutral	neutral	0.96,0.08

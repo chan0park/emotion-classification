@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+ non-sadness       0.92      0.96      0.94      2207
+     sadness       0.48      0.32      0.39       287
+
+    accuracy                           0.88      2494
+   macro avg       0.70      0.64      0.66      2494
+weighted avg       0.87      0.88      0.87      2494

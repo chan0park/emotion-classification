@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+ non-disgust       0.98      0.73      0.84      3698
+     disgust       0.06      0.56      0.12       123
+
+    accuracy                           0.73      3821
+   macro avg       0.52      0.65      0.48      3821
+weighted avg       0.95      0.73      0.81      3821

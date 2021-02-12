@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+    non-fear       0.79      0.97      0.87      1861
+        fear       0.71      0.23      0.35       633
+
+    accuracy                           0.78      2494
+   macro avg       0.75      0.60      0.61      2494
+weighted avg       0.77      0.78      0.74      2494
