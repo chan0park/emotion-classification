@@ -115,8 +115,6 @@ class BertClassifier(nn.Module):
         self.dropout = nn.Dropout(args.dp)
         self.classifier_cls = nn.Sequential(
             nn.Linear(args.hidden_size, 256), nn.Dropout(args.ddp), nn.ReLU(), nn.Linear(256, args.n_cls))
-        self.classifier_domain = nn.Sequential(
-            nn.Linear(args.hidden_size, 256), nn.Dropout(args.ddp), nn.ReLU(), nn.Linear(256, 2))
 
     def initialize_bert(self):
         if self.bert_path != None:

@@ -9,6 +9,7 @@ from transformers import AdamW, BertTokenizer
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 from models import BertClassifier
 from preprocess_text import build_preprocess
+from configs import AVAILABLE_DATA
 
 def process_one_text(text_preprocessor, txt):
     try:
@@ -31,12 +32,15 @@ def process_data(entries, tokenizer, text_preprocessor, target_emotion_idx, max_
 
 def import_data(data_path, data_source, data_target, emotion, target_emotion_idx, tokenizer, max_len=256):
     data = {}
-    with open(data_path+f"go-{emotion}.pkl", "rb") as file:
-        data["go"] = pickle.load(file)
-    with open(data_path+f"hurricane-{emotion}.pkl", "rb") as file:
-        data["hurricane"] = pickle.load(file)
-    with open(data_path+f"blm-{emotion}.pkl", "rb") as file:
-        data["blm"] = pickle.load(file)
+    for name in AVAILABLE_DATA:
+        with open(data_path+f"{name}-{emotion}.pkl", "rb") as file:
+            data[name] = pickle.load(file)
+    # with open(data_path+f"go-{emotion}.pkl", "rb") as file:
+    #     data["go"] = pickle.load(file)
+    # with open(data_path+f"hurricane-{emotion}.pkl", "rb") as file:
+    #     data["hurricane"] = pickle.load(file)
+    # with open(data_path+f"blm-{emotion}.pkl", "rb") as file:
+    #     data["blm"] = pickle.load(file)
 
     text_preprocessor = build_preprocess(demojize=True, textify_emoji=True, mention_limit=3,
                                         punc_limit=3, lower_hashtag=True, segment_hashtag=True, add_cap_sign=True)

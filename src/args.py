@@ -2,7 +2,7 @@ import os
 import argparse
 import time
 from datetime import datetime
-from configs import PATH_PROCESSED, BERT_DIR, BERT_MAX_LENGTH, EMO_EKMAN, EMO_PLUTCHIK, PATH_MODELS, PATH_BERT_BLM, PATH_BERT_BLM_ONLY, PATH_BERT_HUR, PATH_BERT_HUR_ONLY, PATH_SUMMARY
+from configs import PATH_PROCESSED, BERT_DIR, BERT_MAX_LENGTH, EMO_EKMAN, EMO_PLUTCHIK, PATH_MODELS, PATH_BERT_BLM, PATH_BERT_BLM_ONLY, PATH_BERT_HUR, PATH_BERT_HUR_ONLY, PATH_SUMMARY, AVAILABLE_DATA
 
 parser = argparse.ArgumentParser(
     description='Process arguments for fine-tuning bert.')
@@ -11,9 +11,9 @@ parser.add_argument('--emotion', '-emo', action='store',
 parser.add_argument('--n_cls', '-n_cls', action='store',
                     type=int, default=None)
 parser.add_argument('--source', '-src', nargs='*', action='store',
-                    type=str, default=["go"], choices=["go", "hurricane", "blm"])
+                    type=str, default=["go"], choices=AVAILABLE_DATA)
 parser.add_argument('--target', '-tgt', action='store',
-                    type=str, default="hurricane", choices=["go", "hurricane", "blm"])
+                    type=str, default="hurricane", choices=AVAILABLE_DATA)
 parser.add_argument('--target_emotion', '-tgtemo', action='store',
                     type=str, default="joy", choices=["disgust","fear","anger","sadness","surprise","joy","disapproval","aggressiveness","optimism","remorse","love","awe","contempt","submission"])
 
